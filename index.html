@@ -9,16 +9,24 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="video.html">Video</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="home.html">Home</a></li>
-            <li style="float:left"><a href="home.html"> Jay Chou</a></li>
-        </ul>
-    </nav>
+    <div class="topnav" id="myTopnav">
+        <a href="home.html"> Jay Chou</a>
+        <div class="topnav-right">
+            <a href="home.html" class="active">Home</a>
+            <a href="music.html">Music</a>
+            <a href="video.html">Video</a>
+            <a href="about.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                <div class="burger-menu"></div>
+                <div class="burger-menu"></div>
+                <div class="burger-menu"></div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Your page content goes here -->
+
+    <script src="script.js"></script>
 </body>
 
 </html>
-
