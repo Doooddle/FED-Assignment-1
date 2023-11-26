@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family:  'Montserrat', sans-serif;
@@ -79,3 +81,43 @@ body {
   height: 100%;
   width: 100%;
 }
+
+.homepage-row{  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.homepage-side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.homepage-main {
+  flex: 70%;
+  background-color: beige;
+  padding: 20px;
+}
+
+.welcomeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 10px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+  .homepage-row {   
+    flex-direction: column;
+  }
+}
+
+  img {
+  width: 100%;
+  height: auto;
+  }
