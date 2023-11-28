@@ -56,3 +56,43 @@ nav{
   width: 100%;
   transition: 0.5s;
 }
+
+.theatres{
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.theatres h1{
+  font-size: 60px;
+}
+.theatres h2{
+  font-size: 50px;
+}
+.theatres p{
+  font-size: 40px;
+  margin: 10px 0 40px;
+}
+.tr-btn{
+  display:inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 15px;
+  background:transparent;
+  position: relative;
+  cursor: pointer;
+}
+.tr-btn:hover{
+  border: 1px solid orange;
+  background: orange;
+  transition: 1s;
+}
+nav .fa{
+  display: none;
+}
