@@ -195,16 +195,84 @@ nav .fa{
   padding-top:100px;
 }
 .welcome h1{
-  font-size: 36px;
+  font-size: 45px;
   font-weight: 600;
 }
 
 .welcome p{
   color: black;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 22px;
   padding: 10px;
 }
 
+/*-------works-----*/
+
+.works{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.works a:link{
+  text-decoration: none;
+  color:black;
+}
+
+.works a:hover{
+  color:lightcoral
+}
+
+.books{
+  flex-basis:32%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.books img{
+  height:400px;
+  width:100%;
+  display:block;
+  border-radius: 10px;
+}
+
+.books img{
+  margin: 0 auto;
+}
+
+.books:hover img{
+  transform:scale(0.90);
+}
+
+.category-name{
+  background: transparent;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;   
+  transition: 0.5s;
+}
+
+.category-name h3{
+  width: 100%;
+  font-weight: 500;
+  color: white;
+  opacity:0;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  transition: 0.5s;
+}
+
+.category-name:hover h3{
+  bottom: 49%;
+  opacity: 1;
+}
 
