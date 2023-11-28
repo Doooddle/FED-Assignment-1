@@ -42,3 +42,16 @@ nav{
   padding: 8px 12px;
   position: relative;
 }
+
+.topnav ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: orange;
+  display: block;
+  margin: auto;
+}
+.topnav ul li:hover::after{
+  width: 100%;
+  transition: 0.5s;
+}
