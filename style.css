@@ -1,123 +1,27 @@
-* {
-  box-sizing: border-box;
-}
-body {
+*{
   margin: 0;
-  font-family:  'Montserrat', sans-serif;
-  background-color: beige;
-  color: #585D60
-}
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
 
-.topnav {
-  font-family: 'Caveat', cursive;
-  overflow: hidden;
-  background-color: #ff8c00;
-}
+}  
 
-.topnav a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 30px;
-  text-decoration: none;
-  font-size: 30px;
-  border-bottom:2px solid transparent;
-
-}
-
-.topnav-right a {
-  float: right;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 30px;
-  text-decoration: none;
-  font-size: 30px;
-  border-bottom:2px solid transparent;
-}
-.topnav-right a:hover {
-  color: orangered;
-
-}
-
-.topnav-right a.active {
-  color: orangered;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 700px) {
-  .topnav-right a {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-@media screen and (max-width: 700px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-}
-.videowrapper {
-  position: relative;
-  padding-bottom: 56.25%; 
-  height: 0;
-}
-.videowrapper iframe {
-  overflow: none;
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.homepage-row{  
+nav{
   display: flex;
-  flex-wrap: wrap;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.topnav{
+  flex: 1;
+  text-align:right;
 }
 
-.homepage-side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
+.SuzanneCollins{
+  text-align: left;
 }
-
-.homepage-main {
-  flex: 70%;
-  background-color: beige;
-  padding: 20px;
+.SuzanneCollins a{
+  font-family: 'Caveat', cursive;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
 }
-
-.welcomeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 10px;
-}
-
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
-
-@media screen and (max-width: 700px) {
-  .homepage-row {   
-    flex-direction: column;
-  }
-}
-
-  img {
-  width: 100%;
-  height: auto;
-  }
