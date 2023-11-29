@@ -422,3 +422,96 @@ form button{
   }
 }
 
+/*About Page*/
+/*--------Biography-------*/
+
+.sub-header{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../images/centralparkbanner.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.sub-header h1{
+  margin-top: 100px;
+}
+
+.about-sc{
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.about-content{
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.about-content img{
+  width: 100%;
+}
+
+.about-content h1{
+  padding-top: 0;
+}
+
+.about-content p{
+  font-size: 24px;
+  padding: 15px 0 25px;
+}
+
+@media(max-width: 700px){
+  .about-content p{
+    font-size: 16px;
+  }
+  .about-content img{
+    width: 75%;
+    height: 50%;
+  }
+}
+
+/*----Accompishments----*/
+
+.awards h3{
+  font-size: 40px;
+  color: orange;
+}
+
+.accomplishments {
+  list-style: none;
+  padding: 0;
+}
+
+.accomplishments li {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .awards h3{
+    font-size: 25px;
+  }
+  .accomplishments li {
+    padding: 20px;
+    font-size: 15px;
+    padding: 5px;
+  }
+}
+
+.accomplishments a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.awards-banner {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
