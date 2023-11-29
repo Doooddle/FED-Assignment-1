@@ -446,7 +446,8 @@ form button{
   width: 80%;
   margin: auto;
   padding-top: 80px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
+
 }
 
 .about-sc h3{
@@ -525,3 +526,21 @@ form button{
   padding: 20px;
 }
 
+/*Interview Page*/
+.questions {
+  color: #FFA500;
+  font-weight: bold;
+}
+
+.questioning p{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+@media (max-width: 700px){
+  .questioning p{
+    font-size: 14px;
+  }
+}
