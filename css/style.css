@@ -437,7 +437,10 @@ form button{
 
 .sub-header h1{
   margin-top: 100px;
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
 }
+
 
 .about-sc{
   width: 80%;
@@ -445,6 +448,12 @@ form button{
   padding-top: 80px;
   padding-bottom: 50px;
 }
+
+.about-sc h3{
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+}
+
 
 .about-content{
   flex-basis: 48%;
@@ -475,6 +484,7 @@ form button{
 }
 
 /*----Accompishments----*/
+
 
 .awards h3{
   font-size: 40px;
