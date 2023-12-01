@@ -619,3 +619,9 @@ form button{
   position: relative;
   cursor: pointer;
 }
+
+.contacting-btn:hover{
+  border: 1px solid orange;
+  background: orange;
+  transition: 1s;
+}
