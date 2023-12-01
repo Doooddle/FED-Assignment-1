@@ -36,12 +36,11 @@ Features
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
 Existing Features
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-Features Left to Implement
-Another feature idea
+A clean homepage with easy navigation both in pc and mobile view
+Biography section that allows viewers to know more about Suzanne Collins
+Books page with a non-functional shopping cart, being unable to add or remove items from it.
+A page for the Hunger Games book description.
+A news page with non-functional email button.
 
 Technologies Used
 
@@ -49,19 +48,32 @@ HTML was used to insert images and code in the content required for this assessm
 CSS was used to style the information, making it easier to read and understand, and also to make the website responsive to mobile view.
 Lastly, Javascript was used scarcely to create a function to make the responsive mobile menu.
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+https://fontawesome.com/v4/icons/
+Font awesome was used to get access to the icons that were used.
 
-JQuery
-The project uses JQuery to simplify DOM manipulation.
+https://fonts.google.com/
+Google fonts were used for formatting purposes.
+
+
 Testing
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+1. Navbar
+Clicking on Navbar allows smooth transitions from page to page. Pages open in new tabs as specified
 
-Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+2. Home Page
+Clicking on the links open the respective pages properly. Buttons change colour when hovered over. Active page is highlighted. Words pop up when image is hovered over
+
+3. About Page
+Clicking on the about section shows the correct content that is supposed to be seen. Mobile view is easily visible and able to be seen clearly.
+Words become smaller in mobile view to facilitate easier scrolling.
+
+4. Works Page
+The items contract when hovered over and a border appears. The boxes flex column-wise in mobile view. The button to increase or decrease quantity works. Anchor link from the icon to the shopping cart functions as well.
+
+5. Hunger Games
+Details of the book are shown clearly, and the images that open the respective links are working and open in a new tab. 
+
+6. News Page:
+Empty form is not accepted, invalid inputs on the email section is also not accepted, correct inputs does nothing. Page flexes column.
 
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
@@ -69,8 +81,18 @@ If this section grows too long, you may want to split it off into a separate fil
 
 Credits
 Content
-The text for section Y was copied from the Wikipedia article Z
+The content from the website was taken from  
+https://www.suzannecollinsbooks.com/index.htm
+
 Media
-The photos used in this site were obtained from ...
+The photos used in this site were obtained from
+https://www.suzannecollinsbooks.com/index.htm
+https://www.walmart.com/
+https://1000logos.net/
+https://www.tvguide.com/news/twilight-stephenie-meyer-supernatural-series-for-hulu/
+https://www.btsb.com/2008/11/10/rick-riordan-about-the-author/
+
 Acknowledgements
-I received inspiration for this project from X
+I received inspiration for this project from 
+https://www.youtube.com/watch?v=18Jvyp60Vbg&ab_channel=CarpoolVenom
+https://www.youtube.com/watch?v=oYRda7UtuhA&list=PLjwm_8O3suyP5kGKmwS_DM0Hs1j7fshi5&ab_channel=GreatStack
