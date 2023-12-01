@@ -1,0 +1,719 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzanne Collins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<style>
+html{
+    overflow-x: hidden;
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+
+}   
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4, 9, 30, 0.7)), url(images/songbirds_and_snakes_banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.topnav{
+    flex: 1;
+    text-align:right;
+}
+
+.SuzanneCollins{
+    text-align: left;
+}
+.SuzanneCollins a{
+    font-family: 'Caveat', cursive;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.topnav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.topnav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.topnav ul li a.active{
+    color: orange;
+}
+.topnav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin: auto;
+}
+.topnav ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.theatres{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.theatres h1{
+    font-size: 60px;
+}
+.theatres h2{
+    font-size: 50px;
+}
+.theatres p{
+    font-size: 40px;
+    margin: 10px 0 40px;
+}
+.tr-btn{
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 15px;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+}
+.tr-btn:hover{
+    border: 1px solid orange;
+    background: orange;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    body{
+        overflow-x: hidden;
+    }
+    .theatres h1{
+        font-size: 25px;
+    }
+    .theatres h2{
+        font-size: 20px;
+    }
+    .theatres p{
+        font-size: 15px;
+    }
+    .topnav ul li{
+        display: block;
+    }
+    .topnav{
+        position: absolute;
+        background: black;
+        height: 100vh;
+        width: 100%;;
+        top: 0;
+        right: -700px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .topnav ul{
+        padding: 30px;
+    }
+}
+
+/*-----Welcome-----*/
+
+.welcoming{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.welcoming p{
+    padding: 0;
+}
+
+.welcoming img{
+    height: 400px;
+    max-width: 100%;
+}
+@media(max-width: 700px){
+    .welcoming img{
+    margin-left: 0px;
+    margin-right: 15px;
+    }
+}
+.welcome{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+.welcome h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.welcome p{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/*-----series-----*/
+.series{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+.series h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.series p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.works-desc{
+    flex-basis: 31%;
+    background: lightpink;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.works-desc:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+/*-------works-----*/
+
+.works{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.works a:link{
+    text-decoration: none;
+    color:black;
+}
+
+.works a:hover{
+    color:lightcoral
+}
+
+.books{
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.books img{
+    height:400px;
+    width:100%;
+    display:block;
+    border-radius: 10px;
+}
+
+.books img{
+    margin: 0 auto;
+}
+
+.books:hover img{
+    transform:scale(0.90);
+}
+
+.category-name{
+    background: transparent;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;   
+    transition: 0.5s;
+}
+
+.category-name h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    opacity:0;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.category-name:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*--------Hunger Games Trilogy-------*/
+
+.hunger_games_trilogy{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+.hunger_games{
+    flex-basis:31%;
+    border-radius: 10px;
+    margin-bottom:5%;
+    text-align: center;
+}
+.hunger_games img{
+    height: 400px;
+    width:100%;
+    border-radius: 10px;
+}
+
+.hunger_games p{
+    padding: 0;
+}
+
+.hunger_games h3{
+    margin-top:16px;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+/*---------reviews-------*/
+.reviews{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.reviewing{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.reviewing img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.reviewing p{
+    padding: 0;
+}
+.reviewing h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.reviewing .fa{
+    color: #f44336;
+}
+@media(max-width: 700px){
+    .reviewing img{
+    margin-left: 0px;
+    margin-right: 15px;
+
+    }
+}
+
+/*----- call to action ------*/
+
+.contact{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4, 9, 30, 0.7)),url(images/hungergamesbanner.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding:100px 0;
+}
+
+.contact h1{
+    color:white;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+.contact-btn{
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 15px;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+}
+.contact-btn:hover{
+    border: 1px solid coral;
+    background: lightcoral;
+    transition: 1s;
+}
+
+@media(max-width: 700px){
+    .contact h1{
+        font-size: 20px; 
+    }
+}
+
+/*--------Footer-------*/
+.footer{
+    margin-top:150px;
+    width: 70%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.footer div{
+    text-align: center;
+    margin: auto;
+}
+
+footer div h3{
+    font-weight:300;
+    margin-top: auto;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.footercol-1 a{
+    display: block;
+    text-decoration: none;
+    color:#efefef
+}
+
+.footercol-3 a{
+    display: block;
+    text-decoration: none;
+    color:#efefef
+}
+
+form input{
+    width: 100%;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button{
+    color: white;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+</style>
+
+<body>
+    <section class = "header">
+        <nav>
+            <div class="SuzanneCollins">
+            <a href = "index.html"> Suzanne Collins</a>
+            </div>
+            <div class="topnav" id="Topnav">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="about.html"target="_blank">ABOUT</a></li>
+                    <li><a href="works.html"target="_blank">WORKS</a></li>
+                    <li><a href="interview.html"target="_blank">INTERVIEW</a></li>
+                    <li><a href="news.html"target="_blank">NEWS</a></li>
+                </ul>
+              </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+<section>
+<div class="theatres">
+    <h1>The Hunger Games: </h1>
+    <h2>The Ballad of Songbirds and Snakes</h2>
+    <p> In Theatres Now!</p>
+    <a href="https://youtu.be/NxW_X4kzeus?feature=shared" class="tr-btn" target="_blank"> Click to view trailer.</a>
+</div>
+</section>
+<!-----welcome-->
+<section class="welcome">
+    <h1> Welcome! </h1>
+    <p> Hi! Thanks for visiting my website!</p>
+    <div class="row">
+        <div class="welcoming">
+            <img src="images/centralpark.jpg">
+        </div>
+        <div class="welcoming">
+            <p> Here’s a picture of me with a rat in Central Park. If you’ve read my fantasy series, The Underland Chronicles, you will have a clue as to why I chose this photo. If not, you may want to click around and find out a little more about my books. Or visit the Scholastic website for cool games and info!
+            </p>
+        <div class="welcome">
+        <a href="about.html" class="welcome-btn" target="_blank">Read more</a>
+
+        </div>
+    </div>
+</div>
+</section>
+
+<!-------series---->
+<section class="series">
+    <h1>Categories of Works</h1>
+    <p> Here are my pieces</p>
+    <div class="row">
+        <div class="works-desc">
+            <h3> The Hunger Games Series</h3>
+        </div>
+        <div class="works-desc">
+            <h3> The Underland <br> </h3>
+            <h3>  Chronicles</h3>
+        </div>
+        <div class="works-desc">
+            <h3> Picture Books</h3>
+        </div>
+    </div>
+</section>
+
+<section class="works">
+    <h1> <a href="works.html"target="_blank">WORKS</a></h1>
+
+    <div class="row">
+        <div class="books">
+            <img src="images/songbirds_cover.jpg">
+            <div class="category-name">
+                <h3> The Hunger Games</h3>
+            </div>
+        </div>
+        <div class="books">
+            <img src="images/gregor1.jpg">
+            <div class="category-name">
+                <h3> The Underland Chronicles</h3>
+            </div>
+        </div>
+        <div class="books">
+            <img src="images/yotj_cover.jpg">
+            <div class="category-name">
+                <h3> Picture Books</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-------Hunger Games Trilogy------>
+<section class="hunger_games_trilogy">
+    <h1> The Hunger Games Trilogy</h1>
+    <p>The New York Times Bestselling Series</p>
+
+    <div class="row">
+        <div class="hunger_games">
+            <img src="images/hungergames1.jpg">
+            <h3>The Hunger Games</h3>
+            <p> Let the Games Begin!</p>
+        </div>
+        <div class="hunger_games">
+            <img src="images/hungergames2.jpg">
+            <h3>Catching Fire</h3>
+            <p> Sparks will fly!</p>
+        </div>
+        <div class="hunger_games">
+            <img src="images/hungergames3.jpg">
+            <h3>Mockingjay</h3>
+            <p> The final installment!</p>
+        </div>
+    </div>
+</section>
+<!-----------reviews-------->
+<section class="reviews">
+    <h1> Reviews </h1>
+    <p> Placeholder Text</p>
+
+    <div class="row">
+        <div class="reviewing">
+            <img src="images/hungergames3.jpg">
+            <div>
+                <p>
+                    bunch of text
+                </p>
+                <h3>Idiot town</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="reviewing">
+            <img src="images/hungergames3.jpg">
+            <div>
+                <p>
+                    bunch of text
+                </p>
+                <h3>Idiot town</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!---Contact Us-->
+<section class="contact">
+    <h1> Sign Up For Our Newsletter <br> 
+        to get exciting new updates
+        from Suzanne Collins!
+    </h1>
+    <a href="" class="contact-btn">Sign Up Now!</a>
+</section>
+
+<!---Footer-->
+
+<section class="footer">
+    <div class="footercol-1">
+        <h3> USEFUL LINKS</h3>
+        <a href="https://www.scholastic.com/aboutscholastic"target="_blank">Scholastic</a>
+        <a href="https://www.penguin.com/"target="_blank">Penguin Group</a>
+        <a href="https://www.npr.org/2005/07/25/4646599/adventures-to-read-all-through-the-summer"target="_blank">NPR</a>
+        <a href="https://www.indiebound.org/"target="_blank">Indie Bound</a>
+    </div>
+    <div class="footercol-2">
+        <h3>NEWSLETTER</h3>
+        <form>
+            <input type="email" placeholder="Your Email Address" required>
+            <br>
+            <button type="submit">Subscribe Now!</button>
+        </form>
+    </div>
+    <div class="footercol-3">
+        <h3>MORE LINKS</h3>
+        <a href="http://www.barnesandnoble.com/"target="_blank">Barnes & Noble</a>
+        <a href="https://www.booksamillion.com/"target="_blank">Books-A-Million</a>
+        <a href="https://www.amazon.com/"target="_blank">Amazon</a>
+        <a href="https://authorsguild.org/"target="_blank">Authors Guild</a>
+    </div>
+
+</section>    
+
+
+
+
+
+
+
+
+<!-----JavaScript for toggle menu----->
+<script>
+
+    var TopNav = document.getElementById("TopNav");
+
+    function showMenu(){
+        Topnav.style.right = "0"; 
+    }
+    function hideMenu(){
+        Topnav.style.right = "-700px";
+    }
+</script>
+</body>
