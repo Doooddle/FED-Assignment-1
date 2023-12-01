@@ -33,7 +33,6 @@ As a user type, I want to perform an action, so that I can achieve a goal.
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory) Include the Adobe XD wireframe as a folder. You can include the XD share url.
 
 Features
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
 Existing Features
 A clean homepage with easy navigation both in pc and mobile view
@@ -41,6 +40,10 @@ Biography section that allows viewers to know more about Suzanne Collins
 Books page with a non-functional shopping cart, being unable to add or remove items from it.
 A page for the Hunger Games book description.
 A news page with non-functional email button.
+
+Features to be added
+Responsive shop menu
+Email button that works
 
 Technologies Used
 
@@ -75,9 +78,6 @@ Details of the book are shown clearly, and the images that open the respective l
 6. News Page:
 Empty form is not accepted, invalid inputs on the email section is also not accepted, correct inputs does nothing. Page flexes column.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 Credits
 Content
