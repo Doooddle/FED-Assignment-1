@@ -7,7 +7,9 @@ html{
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
-}   
+  list-style: none;
+  text-decoration: none;
+}
 
 /*------Topnav-------*/
 .header {
@@ -642,3 +644,47 @@ form button{
   font-family: 'Caveat', cursive;
   font-size: 60px;
 }
+
+
+/*shop*/
+
+.container{
+  max-width: 1068px;
+  margin: auto;
+  width: 100%;
+}
+.shop-works{
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+  text-decoration: none;
+}
+
+.shopheader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo{
+  font-size: 1.1rem;
+  color: orange;
+  font-weight: 400;
+}
+
+#cart-icon{
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.section-title{
+  font-size: 35px;
+  font-weight:600;
+  text-align: center;
+}
+
+.shop{
+  margin-top: 2rem;
+}
+
