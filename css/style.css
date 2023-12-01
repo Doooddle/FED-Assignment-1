@@ -837,4 +837,22 @@ form button{
   color: red;
 }
 
+/*Hunger Games Page*/
+
+.hunger-header{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../images/hungergamesmoviebanner.webp);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.hunger-header h1{
+  margin-top: 100px;
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
+}
+
 
